@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* background-color: black; */
+    color: black;
+    height: 100vh;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9WLACq8agHbQacIFWvzm2RqoKCHD19PF0jg&usqp=CAU) ;
+    background-repeat: repeat-x, repeat-x;
+	background-position:0 0, 120px 0;
+overflow: hidden;
+   
+    background-size: cover;
+  
+}
+
+
+
+.main{
+    /* background-image: linear-gradient(120deg,#F08F6B,  #C2C2C1); */
+    height: 90%;
+}
+.header{
+    height: 20%;
+    
+    margin: auto;
+    /* border: solid; */
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+
+    
+}
+.section1{
+    height: 10%;
+    padding-top: 2rem;
+    margin: auto;
+    text-align: center;
+    /* border: solid; */
+}
+.section2{
+    height: 69%;
+    /* display: flex; */
+    margin: auto;
+    text-align: center;
+    /* border: solid; */
+}
+.foother{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    height: 10%;
+    margin: auto;
+    text-align: center;
+    /* border: solid; */
+}
+input {
+    border: none;
+    outline: none;
+    width: 20%;
+    height: 4rem;
+    font-size: 1.5rem;
+    text-align: center;
+    /* background-image: url(https://bilimgenc.tubitak.gov.tr/sites/default/files/infinitive_.jpg); */
+  }
+
+
+
+
+
+
+.kutu4 {
+    width: 17%;
+    height: 6rem;
+    padding:10px 5px;
+    position: relative;
+    animation-name:animasyon4;
+    animation-duration:4s;
+    border: 2px solid #F6F;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes animasyon4 {
+        0%   {left:0px;
+        transform: matrix(1, 0, 0, 1, 0, 0);}
+       
+        50%  {left:110px;
+        transform: matrix(1, -0.3, 0, 1, 0, 0);}
+        
+        100% {left:0px;
+        transform: matrix(1, 0, 0, 1, 0, 0);}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .box ,.box1{
+        height: 45px;
+        width: 100px;
+        overflow: hidden;
+        /* border: 1px solid red; */
+        /* background: #ff0; */
+        /* margin: auto; */
+        margin-top: 2rem;
+        display: inline-block;
+        margin-right: 2rem;
+        
+      }
+      .hid-box , .hid-box1{
+        bottom: 100%;
+        position: relative;
+        transition: all .3s ease-out;
+        /* background: #428bca; */
+        height: 100%;
+        font-size: 3rem;
+      }
+      
+      /* .box:hover > .hid-box{
+        top: 0;
+      } */
+      .hid-box2, .hid-box3 {
+        bottom: 0;
+        position: relative;
+        transition: all .3s ease-out;
+        /* background: crimson; */
+        height: 100%;
+        font-size: 3rem;
+      }
+
+      .box3{
+          /* border: solid red; */
+          height: 83%;
+      }
+      #hid-box4{
+        /* border: solid blue; */
+        height: 7vh;
+        width: 100vh;
+        margin: auto;
+        font-size: 2.5rem;
+      }
+      #hid-box5{
+        height: 22vh;
+        /* border: solid red; */
+      }
+      #hid-box6{
+        height: 22vh;
+        /* border: solid red; */
+      }
+      #ok1{
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 2rem;
+          font-size: 6rem;
+            color: red;
+          width: 100px;
+        height: 100px;
+        /* background-color: red; */
+        position: relative;
+        animation-name: example;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+     
+      
+      @keyframes example {
+        0%   { left:0px; color: red;}
+        /* 50%  { left:50%;color: white;    } */
+        100% { left:100%;color: white;}
+      }
+
+      #ok2{
+        display: flex;
+        justify-content: flex-end;
+        /* margin-top: 4rem; */
+        font-size: 6rem;
+        color: white;
+        width: 100px;
+      height: 100px;
+      /* background-color: red; */
+      position: relative;
+      animation-name: example1;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      }
+      @keyframes example1 {
+        0%   { left:100%; color: white;}
+        /* 50%  { left:50%;color: red;    } */
+        100% { left:-115px;color: red;}
+      }
+      @media only screen and (max-width: 800px) {
+        .kutu4{
+          width: 57%;
+        }
+      }
