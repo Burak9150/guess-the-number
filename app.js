@@ -41,7 +41,7 @@ function sonuç() {
             p2.innerHTML=0
             input1.value=""
             // p2.innerHTML=rastgele
-            tahmin.innerHTML="yanlış giriş...\n 1-100 arası giriniz"
+            tahmin.innerHTML="yanlış giriş...\n 1-100 arası sayı giriniz"
         }
   
       
