@@ -21,21 +21,31 @@ let t=0
 function sonuç() {
     
     let rastgele =Math.round(Math.random()*100+1)
+    
+
     if (input1.value==rastgele) {
         t+=1
         p1.innerHTML=input1.value
         input1.value=""
         tahmin.innerHTML="Tebrikler doğru tahmin  "
     }else{
-        t+=1
-        p1.innerHTML=input1.value
-        p2.innerHTML=input1.value
-        input1.value=""
-        // p2.innerHTML=rastgele
-        tahmin.innerHTML="Yanlış tahmin sayısı :  "+ t
+        if (0<input1.value && input1.value<101) {
+            t+=1
+            p1.innerHTML=input1.value
+            p2.innerHTML=input1.value
+            input1.value=""
+            // p2.innerHTML=rastgele
+            tahmin.innerHTML="Yanlış tahmin sayısı :  "+ t
+        }else{
+            p1.innerHTML=0
+            p2.innerHTML=0
+            input1.value=""
+            // p2.innerHTML=rastgele
+            tahmin.innerHTML="yanlış giriş...\n 1-100 arası giriniz"
+        }
+  
       
-
-
+   
     }
     
     let element=document.getElementsByClassName("hid-box")[0];

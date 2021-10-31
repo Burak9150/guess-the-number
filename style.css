@@ -205,4 +205,17 @@ input {
         .kutu4{
           width: 57%;
         }
+        input{
+          width: 30%;
+        }
+        #hid-box4{
+          width: 75%;
+          font-size: 2rem;
+          /* background-color: #F6F; */
+        }
+        .kutu4{
+         font-size: 1.5rem;
+         width: 45%;
+         height: 5rem;
+        }
       }
